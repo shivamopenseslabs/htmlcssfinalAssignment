@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+body{
+    height:100vh;
+    width:100vw;
+}
+#container {
+  margin-left: 217.5px;
+  width: 1170px;
+  /* margin-right: 213.5px; */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.innerDiv {
+  border: 1px solid black;
+  height: 392px;
+  width: 292px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+h2 {
+  height: 66px;
+}
+.top {
+  text-decoration: underline;
+  color: #a5a5a5;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 16px;
+}
+.text {
+  height: 95px;
+  margin-top: 165px;
+  margin-left: 99.5px;
+}
+.first {
+  font-size: 30px;
+  text-align: left;
+}
+.circle{
+    position: relative;
+}
+.second {
+  color: #a5a5a5;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 8px;
+}
+.firstBlock {
+  margin-top: 144px;
+  margin-left: 80.5px;
+  height: 103px;
+  width: 140px;
+}
+.firstBlock p {
+  margin-top: 16px;
+}
+.firstText {
+  color: #000000;
+  font-size: 48px;
+  text-shadow: 1px solid #707070;
+  font-weight: bolder;
+  margin-top: 116px;
+  margin-left: 89.5px;
+}
+.firstText p span {
+  -webkit-text-stroke: 1px #707070;
+  color: #ffffff;
+  text-shadow: 1px solid #707070;
+  font-size: 48px;
+}
+.firstSpan {
+  color: #000000;
+  font-size: 16px;
+}
+.secondBlock {
+  display: flex;
+  margin-top: 28px;
+  justify-content: space-between;
+  visibility: hidden;
+}
+button {
+  border: 0px;
+  text-decoration: underline;
+  background: white;
+  color: #a5a5a5;
+  font-size: 16px;
+}
+.arrow {
+  color: #faaf41;
+}
+.innerDiv:hover {
+    background-color: #000000;
+    color:white;
+  box-shadow: 30px 30px 25px #00000040;
+}
+
+hr{
+    background: black;
+    width: 3px;
+    position: relative;
+    left: 291px;
+    z-index: -1;
+    height: 392px;
+}
+.tempDiv{
+    display: flex;
+}
+.innerDiv:hover .secondBlock {
+  visibility: visible;
+}
+#circle{
+    position: absolute;
+    background-color: #3787C8;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left:39.5px;
+    top: 118px;
+    z-index: 2;
+    z-index: -1;
+} 
