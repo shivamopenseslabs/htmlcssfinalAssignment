@@ -1,0 +1,5 @@
+@mixin font($fontSize , $color){
+    text-align:left;
+    font-size:$fontSize;
+    color:$color;
+}

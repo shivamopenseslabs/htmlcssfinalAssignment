@@ -1,0 +1,83 @@
+@import "_commancode.scss";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    width:100%;
+}
+.container__div{
+    margin-left:15rem;
+    margin-right:14.75rem;
+    height:20rem;
+}
+.header{
+    margin-top:5.93rem;
+    display: flex;
+    align-items: center;
+    h2{
+        position: absolute;
+        margin-left:2.93rem;
+    }
+}
+.main{
+    margin-top:6.87rem;
+}
+.row{
+    display:flex;
+}
+.column{
+    width:16.56rem;
+    border-right:0.06rem solid #707070;
+    position:relative;
+}
+.column__div{
+    margin-left:2.18rem;
+    width:14rem;
+}
+.image__div{
+    position: relative;
+    img{
+        width:14rem;
+        height:14rem;
+        border-radius:50%;
+    }
+}
+.circle{
+    @include circle;
+    width:1rem;
+    height:1rem;
+    background-color:$primaryColor;
+    bottom:13rem;
+    right:12.96rem;   
+}
+.text__div{
+    margin-top:2.5rem;
+    h2{
+        @include font(1.87rem , 0rem);
+    }
+    h4 {
+        @include font(1rem ,0.75rem);
+    }
+    p{
+       @include font(1rem, 2.37rem);
+    }
+    hr{
+        left: 7.5rem;
+        position: absolute;
+        width: 3.5rem;
+        top: 23.44rem;
+        right:4rem;
+        border: 0.125rem solid $secondaryColor;
+    }
+}
+#circle{
+    @include circle;
+    width:6.40rem;
+    height:6.40rem;
+    background-color:$secondaryColor;
+    opacity:90%;
+    z-index:-1;
+}

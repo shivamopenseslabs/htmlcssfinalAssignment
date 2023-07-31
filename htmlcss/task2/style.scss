@@ -1,0 +1,54 @@
+@import "_comman.scss";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    // filter:brightness(0.2);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img.png');
+    opacity:0.9;
+    background-color: black;
+    width:1598px;
+    .flex-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .col{
+        width:357px;
+        height:393px;
+        border:1px solid grey;
+        position:relative;
+        h2{
+            @include font(48px , white);
+            margin-top:87px;
+            margin-left:59px;
+            span{
+                visibility:hidden;
+            }
+        }
+    }
+}
+
+
+
+.text--1{
+    @include font(16px , white);
+    text-decoration:underline;
+    position:absolute;
+    left:10.41px;
+    top:12.89px;
+}
+.text--2{
+    @include font(24px , #FAAF41);
+    margin-top:72.08px;
+    margin-left:48px;
+}
+.text--3{
+    @include font(18px , white);
+    margin-top:15.38px;
+    margin-left:48px;
+    margin-right:46.5px;
+}

@@ -1,0 +1,15 @@
+@mixin circle{
+    position:absolute;
+    content:"";
+    border-radius:50%;
+}
+
+@mixin font($fontSize , $marginTop){
+    font-size:$fontSize;
+        color:#000000;
+        text-align:left;
+        margin-top:$marginTop;
+}
+
+$primaryColor :#3787C8;
+$secondaryColor :#E14B32;
