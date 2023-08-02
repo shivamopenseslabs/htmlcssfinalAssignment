@@ -1,0 +1,72 @@
+@mixin linearGradient($color1, $color2) {
+  background: linear-gradient(180deg, $color1, $color2);
+}
+
+@mixin circle($height, $width ,$top, $right , $bottom , $left, $bgColor) {
+  position:absolute;
+  top:$top;
+  bottom:$bottom;
+  left:$left;
+  right:$right;
+  border-radius: 50%;
+  background-color: $bgColor;
+  height: $height;
+  width: $width;
+}
+
+@mixin square($width, $height,$top, $right , $bottom ,$left) {
+  background-color: #df4e31;
+  width: $width;
+  height: $height;
+  position:absolute;
+  top:$top;
+  left:$left;
+  right:$right;
+  bottom:$bottom;
+}
+
+@mixin triangle($width , $height ,$top , $right ,$bottom, $left ,$color){
+  position: absolute;
+  top:$top;
+  bottom:$bottom;
+  left:$left;
+  right:$right;
+  width:$width;
+  background-color:$color;
+  height: $height;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+@mixin Text1($fontSize , $color){
+    font-size:$fontSize;
+    color:$color;
+    font-weight:600;
+    text-align:left;
+}
+
+// @mixin Text1(){
+
+// }
+
+@mixin line1($bgColor, $width , $height , $top , $left){
+    top:$top;
+    left:$left;
+    height:$height;
+    position: absolute;
+    content: "";
+    background-color:$bgColor;
+    width:$width;
+}
+
+
+
+@mixin textfirst($fontSize , $fontWeight , $fontFamily){
+  font-size:$fontSize;
+  font-weight:$fontWeight;
+  font-family:$fontFamily;
+}
+
+
+
+// page 3 mixins
+
