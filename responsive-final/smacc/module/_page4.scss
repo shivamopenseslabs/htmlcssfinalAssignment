@@ -1,0 +1,102 @@
+.page4 {
+  background-color: #ebf0f0;
+  padding-top: 100px;
+  &--div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &--div--flexItems {
+    display: flex;
+    flex-direction: column;
+    &--images {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8%;
+      gap: 19px;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+
+      h4 {
+        font-weight: bold;
+        font-family: "Proxima Nova, Bold";
+        font-size: 16px;
+        text-align: left;
+      }
+      h2 {
+        font-size: 36px;
+        font-family: "Proxima Nova, Bold";
+        font-weight: bolder;
+        text-align: left;
+        @media screen and (min-width: 992px) {
+          font-size: 48px;
+        }
+      }
+      p {
+        margin-top: 12%;
+        font-weight: bold;
+        position: relative;
+        @media screen and (min-width: 992px) {
+          margin-top: 24px;
+        }
+        &::after {
+          content: "";
+          width: 56px;
+          height: 2px;
+          background-color: #e14b32;
+          position: absolute;
+          top: 12px;
+    left: 76%;
+          @media screen and (min-width: 992px) {
+            left: 21%;
+          }
+        }
+      }
+    }
+  }
+
+  &--circle {
+    @include circle(100px, 100px, -24px, 0px, 0px, -43px, $second--color);
+    z-index: -1;
+  }
+}
+
+.page4--image--div {
+  width: 28%;
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page4--div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .page4--div--flexItems {
+    width: 25%;
+  }
+  .page4--div--flexItems--images {
+    width: 45%;
+    margin-left: 23%;
+  }
+  .page4--image--div{
+    width:28%;
+  }
+
+  .page4--div--flexItems--images{
+    top:10px;
+    left:74%;
+  }
+  .page4--div--flexItems--text p::after {
+    left: 80%;
+}
+  
+}

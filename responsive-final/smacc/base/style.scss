@@ -1,0 +1,19 @@
+// base files
+@import "../base/colors.scss";
+@import "../base/mixin.scss";
+@import "../base/reset.scss";
+@import "../base/variables.scss";
+
+
+//layout files
+@import "../layout/layout.scss";
+// module files
+@import "../module/_page1.scss";
+@import "../module/page2";
+@import "../module/page3";
+@import "../module/page4";
+// state files
+@import "../state/_desktop.scss"
+// theme files
+
+

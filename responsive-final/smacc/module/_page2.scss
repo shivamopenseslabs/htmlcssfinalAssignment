@@ -1,0 +1,104 @@
+.page2 {
+  background-color: $bg-color2;
+  color: black;
+  z-index: 3;
+  &__div {
+    padding-top: 15%;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 992px) {
+      padding-top: 2%;
+      margin-top: 0%;
+    }
+    &__circle {
+      @include circle(100px, 100px, 15%, 0px, 0px, -9%, #faaf41);
+      z-index: -1;
+      @media screen and (min-width: 992px) {
+        @include circle(100px, 100px, 27%, 0px, 0px, -3%, #faaf41);
+      }
+    }
+    &__column__text {
+      &__p1 {
+        font-weight: bold;
+      }
+      &__p2 {
+        font-weight: bolder;
+        font-size: 36px;
+        text-shadow: 1px 1px #707070;
+        -webkit-text-fill-color: black;
+        span {
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px;
+          color: black;
+        }
+      }
+      &__p3 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        position: relative;
+        @media screen and (min-width: 992px) {
+          margin-left: 20%;
+        }
+        p {
+          margin: 0px 0px 28px 0px;
+        }
+      }
+    }
+  }
+}
+
+.page2___div__column__text__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+.page2__div__column {
+  margin-top: 16%;
+  @media screen and (min-width: 992px) {
+    margin-top: 8%;
+  }
+}
+
+.page2__para::after {
+  @include line1(#faaf40, 34px, 4px, 91%, 43%);
+  @media screen and (min-width: 992px) {
+    left: 28%;
+  }
+}
+
+.page2--triangle {
+  @include triangle(36px, 36px, 100%, 0px, 0px, 83%, #3787c8);
+}
+
+.page2--section2 {
+  background: #ebf0f0;
+  display: flex;
+  color: black;
+  &--text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    h4 {
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 36px;
+      font-weight: bolder;
+    }
+  }
+  &--content--text {
+    position: relative;
+  }
+  
+}
+
+
+.page2--section2--circle{
+    @include circle(100px, 100px, 2%, 3%, 0px, 0px, $second--color);
+    // z-index: -1;
+}
