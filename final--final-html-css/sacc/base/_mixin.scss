@@ -1,0 +1,6 @@
+@mixin font($fontSize , $color){
+    font-size:$fontSize;
+    color:$color;
+    text-align:left;
+    font-weight:bold;
+}
